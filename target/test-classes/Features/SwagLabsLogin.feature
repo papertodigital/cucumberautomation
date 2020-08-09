@@ -23,4 +23,4 @@ Feature: Login to Swag labs
 
     Examples: 
       | username      | password     |
-      | standard_user | secret_sauce |
+      | standard_user | secret_sauce1 |

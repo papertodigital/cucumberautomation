@@ -5,18 +5,22 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pagefactory.SwaglabsHomepage;
 import pagefactory.SwaglabsLoginPage;
+import support.AddonMethods;
 import support.PropertyConfigiurator;
 
 public class SwaglabsLoginSteps {
@@ -24,6 +28,7 @@ public class SwaglabsLoginSteps {
 	WebDriver driver=null;
 	SwaglabsLoginPage loginPage;
 	SwaglabsHomepage homePage;
+	AddonMethods addOns;
 	public static String browser=null;
 	public PropertyConfigiurator propertyConfig=new PropertyConfigiurator("/src/main/resources/config.properties");
 	Logger log=LogManager.getLogger(SwaglabsLoginSteps.class);
@@ -100,10 +105,34 @@ public class SwaglabsLoginSteps {
 	}
 	
 	@After
-	public void afterScenario()
-	{
-		driver.close();
-		//driver.quit();
+	public void after(Scenario scenario){
+		 try {
+		if (scenario.isFailed()) {
+	        	addOns=new AddonMethods(driver);
+	        	//String destinationPath=
+	        			addOns.getScreenShotOnFailure(scenario);
+	       }
+		 }catch(Exception e){
+	          e.printStackTrace();
+	       }finally {
+	  	     driver.close();
+	        
+	  }        
 	}
-
+	
+	
+//	@After
+//	 public void tearDown(Scenario scenario) {
+//	   try {
+//	     if (scenario.isFailed()) {
+//	       final byte[] screenshot = ((TakesScreenshot) driver)
+//	           .getScreenshotAs(OutputType.BYTES);
+//	       scenario.attach(screenshot, "image/png", "tets");
+//	     }
+//	   } finally {
+//	     driver.close();
+//	   }
+//	 }
 }
+
+
