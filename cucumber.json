@@ -1,0 +1,325 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-09T07:51:34.949Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3183384200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.invokeBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Login to Swag labs using page factory approach",
+        "description": "",
+        "id": "login-to-swag-labs;login-to-swag-labs-using-page-factory-approach;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 67527800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 688167200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on swaglabs login page",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 255688600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"standard_user\" and \"secret_sauce\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.SwaglabsLoginSteps.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1830429800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on Login button",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55957900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user redirects to swaglabs homepage",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.isItHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T07:51:41.045Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3226391100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.invokeBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Login to Swag labs using page factory approach",
+        "description": "",
+        "id": "login-to-swag-labs;login-to-swag-labs-using-page-factory-approach;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 85998600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 688113300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on swaglabs login page",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 238993700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"problem_user\" and \"secret_sauce\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"problem_user\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.SwaglabsLoginSteps.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 283999100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on Login button",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37001900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user redirects to swaglabs homepage",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.isItHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-08-09T07:51:45.615Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3209975200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.invokeBrowser()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Logout from the application",
+        "description": "",
+        "id": "login-to-swag-labs;logout-from-the-application;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 420098700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.after(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 667040500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user is on swaglabs login page",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.launchLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 257038000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter \"standard_user\" and \"secret_sauce1\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"secret_sauce1\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinitions.SwaglabsLoginSteps.enterUserCredentials(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73994500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click on Login button",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".product_label\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SMADDUKPF1Q8T01\u0027, ip: \u0027192.168.1.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\smadduku\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 8acd0aaea3d76be1f0bb2979d7ea6a03\n*** Element info: {Using\u003dcss selector, value\u003d.product_label}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy34.isDisplayed(Unknown Source)\r\n\tat pagefactory.SwaglabsHomepage.isProductlabelDisplayed(SwaglabsHomepage.java:29)\r\n\tat stepDefinitions.SwaglabsLoginSteps.isItHomePage(SwaglabsLoginSteps.java:89)\r\n\tat ✽.user redirects to swaglabs homepage(file:///C:/api-core-framework/cucumber-automation/src/test/java/Features/SwagLabsLogin.feature:20)\r\n",
+              "duration": 30023647000,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "user redirects to swaglabs homepage",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.isItHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 992500,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user click on logout button",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.logOut()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "login page will be displayed",
+            "match": {
+              "location": "stepDefinitions.SwaglabsLoginSteps.isLoginPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Login to Swag labs",
+    "description": "",
+    "id": "login-to-swag-labs",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/SwagLabsLogin.feature",
+    "tags": []
+  }
+]

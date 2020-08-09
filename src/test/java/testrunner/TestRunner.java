@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features ="src/test/java/Features/SwagLabsLogin.feature",glue = {"stepDefinitions"},
-plugin = {"pretty", "html:target/cucumber-html-report/report.html","json:cucumber.json"})
+plugin = {"pretty", "html:target/cucumber-html-report/report.html","json:target/jsonreports/cucumber.json"})
 public class TestRunner {
 	
 }
